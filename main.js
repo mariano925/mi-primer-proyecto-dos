@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // --- 1. ANIMACIONES AL HACER SCROLL ---
     // Identificamos los elementos que queremos animar
-    const selectorsToAnimate = '.card, .grid-2col, .gallery figure, .hero, section h2, .photo-static, .artista-card';
+    const selectorsToAnimate = '.card, .grid-2col, .gallery figure, .hero, section h2, .photo-static, .artista-card, .historia-card, form';
     const elements = document.querySelectorAll(selectorsToAnimate);
 
     // Les añadimos la clase base de animación si no la tienen
