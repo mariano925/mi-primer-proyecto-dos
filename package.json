@@ -1,0 +1,12 @@
+{
+  "name": "mi-primer-proyecto-dos",
+  "version": "1.0.0",
+  "description": "Sitio web informativo para Turismo Gualeguay",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"Abre el archivo index.html en tu navegador\""
+  },
+  "author": "",
+  "license": "ISC"
+}

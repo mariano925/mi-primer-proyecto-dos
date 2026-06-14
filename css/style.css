@@ -1,0 +1,22 @@
+:root {
+    /* Paleta Principal */
+    --color-primario: #0d6efd;
+    --color-secundario: #c45e1a; /* El naranja tierra de Gualeguay */
+    --color-exito: #198754;
+    --color-info: #0dcaf0;
+    --color-aviso: #ffc107;
+    --color-peligro: #dc3545;
+    --color-claro: #f8f9fa;
+    --color-fondo: #fef3e8; /* Naranja muy suave para el fondo general */
+    --color-oscuro: #212529;
+
+    /* Colores Adicionales */
+    --color-indigo: #6610f2;
+    --color-purpura: #6f42c1;
+    --color-rosa: #d63384;
+    --color-naranja: #fd7e14;
+    --color-teal: #20c997;
+    
+    /* Ajustes de diseño */
+    --fuente-base: 'Poppins', sans-serif;
+}
