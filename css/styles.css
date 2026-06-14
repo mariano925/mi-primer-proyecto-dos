@@ -256,6 +256,8 @@ footer {
 .artista-card.reggae { border-bottom: 6px solid #2e7d32; }
 .artista-card.folclore { border-bottom: 6px solid var(--color-secundario); }
 .artista-card.electronica { border-bottom: 6px solid var(--color-naranja); }
+.artista-card.cumbia { border-bottom: 6px solid var(--color-aviso); }
+.artista-card.batucada { border-bottom: 6px solid var(--color-rosa); }
 
 .card-icon {
     font-size: 3.5rem;
