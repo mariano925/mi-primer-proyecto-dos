@@ -193,6 +193,33 @@ footer {
     transition: all 0.4s ease;
 }
 
+/* Estilos para el botón de Idioma Flotante */
+.lang-toggle-btn {
+    position: fixed;
+    bottom: 85px; /* Por encima del botón back-to-top */
+    right: 25px;
+    z-index: 1050;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;
+}
+
+.lang-toggle-btn:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .lang-toggle-btn {
+        bottom: 80px;
+        right: 15px;
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
 .back-to-top.show {
     opacity: 1;
     visibility: visible;

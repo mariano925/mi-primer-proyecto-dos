@@ -35,13 +35,13 @@
         </button>
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="naturaleza.html">Naturaleza</a></li>
-            <li class="nav-item"><a class="nav-link" href="gastronomia.html">Gastronomía</a></li>
-            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
-            <li class="nav-item"><a class="nav-link" href="cultura.html">Cultura</a></li>
-            <li class="nav-item"><a class="nav-link" href="../grilla.html">Grilla de artistas</a></li>
+            <li class="nav-item"><a id="nav_inicio" class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a id="nav_naturaleza" class="nav-link active" aria-current="page" href="naturaleza.html">Naturaleza</a></li>
+            <li class="nav-item"><a id="nav_gastronomia" class="nav-link" href="gastronomia.html">Gastronomía</a></li>
+            <li class="nav-item"><a id="nav_servicios" class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a id="nav_eventos" class="nav-link" href="eventos.html">Eventos</a></li>
+            <li class="nav-item"><a id="nav_cultura" class="nav-link" href="cultura.html">Cultura</a></li>
+            <li class="nav-item"><a id="nav_grilla" class="nav-link" href="../grilla.html">Grilla de artistas</a></li>
           </ul>
         </div>
       </nav>
@@ -50,8 +50,8 @@
     <section class="hero">
       <div class="container">
         <p class="text-uppercase fw-semibold mb-2">Turismo Gualeguay</p>
-        <h1>Naturaleza en Gualeguay</h1>
-        <p>Ríos, parques y paisajes serenos para disfrutar la ciudad a tu ritmo, con tiempo para respirar y mirar alrededor.</p>
+        <h1 id="nat_hero_title">Naturaleza en Gualeguay</h1>
+        <p id="nat_hero_desc">Ríos, parques y paisajes serenos para disfrutar la ciudad a tu ritmo, con tiempo para respirar y mirar alrededor.</p>
       </div>
     </section>
 
@@ -63,15 +63,15 @@
           <figcaption>Costanera de Gualeguay</figcaption>
         </figure>
         <div>
-          <h2>La Costanera</h2>
-          <p>La costanera de Gualeguay es uno de los espacios más concurridos de la ciudad, donde familias y amigos se reúnen para disfrutar de atardeceres únicos junto al río y una vista abierta que invita a quedarse un rato más.</p>
+          <h2 id="nat_costanera_title">La Costanera</h2>
+          <p id="nat_costanera_p1">La costanera de Gualeguay es uno de los espacios más concurridos de la ciudad, donde familias y amigos se reúnen para disfrutar de atardeceres únicos junto al río y una vista abierta que invita a quedarse un rato más.</p>
           <p>Durante los fines de semana, es común ver ferias artesanales y espectáculos al aire libre que le dan un encanto especial a este lugar, con un clima muy cercano y relajado.</p>
         </div>
       </section>
 
       <section class="mb-5">
-        <h2>Río Gualeguay</h2>
-        <p>El río Gualeguay es ideal para caminatas, pesca y paseos en bote, mientras que los espacios verdes cercanos ofrecen actividades al aire libre y contacto directo con la biodiversidad entrerriana.</p>
+        <h2 id="nat_rio_title">Río Gualeguay</h2>
+        <p id="nat_rio_text">El río Gualeguay es ideal para caminatas, pesca y paseos en bote, mientras que los espacios verdes cercanos ofrecen actividades al aire libre y contacto directo con la biodiversidad entrerriana.</p>
         <figure class="photo-static">
           <video width="100%" controls style="border-radius: var(--radio-natural); box-shadow: var(--sombra-suave);">
             <source src="../assets/naturaleza.mp4" type="video/mp4">
@@ -149,10 +149,10 @@
 
       <!-- Formulario de contacto al final del main -->
       <section class="mb-5">
-        <h2 class="mb-4">Contacto</h2>
+        <h2 id="contact_title" class="mb-4">Contacto</h2>
         <form>
           <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
+            <label id="contact_name_label" for="nombre" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="nombre" name="nombre" required>
           </div>
           <div class="mb-3">
@@ -170,10 +170,13 @@
     </main>
     <footer>
       <div class="container text-center">
-        <p>&copy; 2025 Turismo en Gualeguay — Todos los derechos reservados</p>
-        <address>Gualeguay, Entre Ríos, Argentina</address>
+        <p id="footer_text">&copy; 2025 Turismo en Gualeguay — Todos los derechos reservados</p>
+        <address id="footer_addr">Gualeguay, Entre Ríos, Argentina</address>
       </div>
     </footer>
+
+    <!-- Botón de Idioma Flotante -->
+    <button id="btn-lang-float" class="btn btn-primary lang-toggle-btn">English</button>
 
     <!-- Botón Volver Arriba -->
     <button id="backToTop" class="btn btn-primary back-to-top" aria-label="Volver arriba">

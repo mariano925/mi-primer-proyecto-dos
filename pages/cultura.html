@@ -35,13 +35,13 @@
             </button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="naturaleza.html">Naturaleza</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gastronomia.html">Gastronomía</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="cultura.html">Cultura</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../grilla.html">Grilla de artistas</a></li>
+                    <li class="nav-item"><a id="nav_inicio" class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a id="nav_naturaleza" class="nav-link" href="naturaleza.html">Naturaleza</a></li>
+                    <li class="nav-item"><a id="nav_gastronomia" class="nav-link" href="gastronomia.html">Gastronomía</a></li>
+                    <li class="nav-item"><a id="nav_servicios" class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a id="nav_eventos" class="nav-link" href="eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a id="nav_cultura" class="nav-link active" aria-current="page" href="cultura.html">Cultura</a></li>
+                    <li class="nav-item"><a id="nav_grilla" class="nav-link" href="../grilla.html">Grilla de artistas</a></li>
                 </ul>
             </div>
         </nav>
@@ -165,10 +165,21 @@
     </main>
     <footer>
         <div class="container text-center">
-            <p>&copy; 2025 Turismo en Gualeguay — Todos los derechos reservados</p>
-            <address>Gualeguay, Entre Ríos, Argentina</address>
+            <p id="footer_text">&copy; 2025 Turismo en Gualeguay — Todos los derechos reservados</p>
+            <address id="footer_addr">Gualeguay, Entre Ríos, Argentina</address>
         </div>
     </footer>
+
+    <!-- Botón de Idioma Flotante -->
+    <button id="btn-lang-float" class="btn btn-primary lang-toggle-btn">English</button>
+
+    <!-- Botón Volver Arriba -->
+    <button id="backToTop" class="btn btn-primary back-to-top" aria-label="Volver arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5"/>
+            <path d="M7 10l5-5 5 5"/>
+        </svg>
+    </button>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="../main.js"></script>

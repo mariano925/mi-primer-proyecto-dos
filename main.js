@@ -75,7 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (typeof clarity === "function") {
                     clarity("event", "contacto_enviado");
                 }
-                alert('¡esta pagina aun esta en contruccion, disculpe!');
+                
+                // Traducimos la alerta de construcción si existe en el JSON
+                const currentLangData = localStorage.getItem('language_data');
+                const alertMsg = currentLangData ? JSON.parse(currentLangData).alert_construction : '¡Esta página aún está en construcción!';
+                
+                alert(alertMsg);
+                
                 // Reiniciamos el formulario
                 form.reset();
                 form.classList.remove('was-validated');
@@ -129,4 +135,62 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // --- 7. INTERNACIONALIZACIÓN (i18n) ---
+    const langBtn = document.getElementById('btn-lang-float');
+    let currentLang = localStorage.getItem('language') || 'es';
+
+    // Función para cargar y aplicar traducciones
+    async function applyTranslations(lang) {
+        try {
+            // Detectar ruta correcta del JSON (si estamos en /pages/ usamos ../)
+            const jsonPath = window.location.pathname.includes('/pages/') ? '../translations.json' : 'translations.json';
+            
+            const response = await fetch(jsonPath);
+            if (!response.ok) throw new Error('No se pudo cargar el archivo de traducciones');
+            
+            const data = await response.json();
+            const texts = data[lang];
+
+            Object.keys(texts).forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    if (id.endsWith('_placeholder')) {
+                        el.setAttribute('placeholder', texts[id]);
+                    } else {
+                        // Si el texto contiene etiquetas HTML (como <strong>), usamos innerHTML
+                        // para mantener el diseño original definido en el JSON.
+                        if (texts[id].includes('<') && texts[id].includes('>')) {
+                            el.innerHTML = texts[id];
+                        } else {
+                            el.textContent = texts[id];
+                        }
+                    }
+                }
+            });
+
+            // Guardamos el objeto de traducciones actual para usarlo en alertas
+            localStorage.setItem('language_data', JSON.stringify(texts));
+
+            // Guardamos la preferencia
+            localStorage.setItem('language', lang);
+            currentLang = lang;
+        } catch (error) {
+            console.error('Error i18n:', error);
+        }
+    }
+
+    // Evento para el botón de cambio de idioma
+    if (langBtn) {
+        langBtn.addEventListener('click', () => {
+            const newLang = currentLang === 'es' ? 'en' : 'es';
+            applyTranslations(newLang);
+        });
+    }
+
+    // Aplicar idioma inicial al cargar la página
+    if (currentLang !== 'es') {
+        applyTranslations(currentLang);
+    }
+
 });

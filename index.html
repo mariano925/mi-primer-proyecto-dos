@@ -35,13 +35,13 @@
         </button>
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/naturaleza.html">Naturaleza</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/gastronomia.html">Gastronomía</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/eventos.html">Eventos</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/cultura.html">Cultura</a></li>
-            <li class="nav-item"><a class="nav-link" href="grilla.html">Grilla de artistas</a></li>
+            <li class="nav-item"><a id="nav_inicio" class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a id="nav_naturaleza" class="nav-link" href="pages/naturaleza.html">Naturaleza</a></li>
+            <li class="nav-item"><a id="nav_gastronomia" class="nav-link" href="pages/gastronomia.html">Gastronomía</a></li>
+            <li class="nav-item"><a id="nav_servicios" class="nav-link" href="pages/servicios.html">Servicios</a></li>
+            <li class="nav-item"><a id="nav_eventos" class="nav-link" href="pages/eventos.html">Eventos</a></li>
+            <li class="nav-item"><a id="nav_cultura" class="nav-link" href="pages/cultura.html">Cultura</a></li>
+            <li class="nav-item"><a id="nav_grilla" class="nav-link" href="grilla.html">Grilla de artistas</a></li>
           </ul>
         </div>
       </nav>
@@ -59,22 +59,22 @@
 
             <img src="assets/plaza.jpg" class="d-block w-100" alt="Plaza San Martín de Gualeguay">
             <div class="carousel-caption">
-              <h2>Descubrí Gualeguay</h2>
-              <p>Plaza San Martín, el corazón de la ciudad y un punto de encuentro donde siempre pasa algo lindo.</p>
+              <h2 id="hero_title">Descubrí Gualeguay</h2>
+              <p id="hero_text">Plaza San Martín, el corazón de la ciudad y un punto de encuentro donde siempre pasa algo lindo.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="assets/carnavales-gualeguay.webp" class="d-block w-100" alt="Carnavales de Gualeguay">
             <div class="carousel-caption">
-              <h2>Eventos y festividades</h2>
-              <p>Los carnavales más vibrantes de Entre Ríos, con música, color y una energía que se siente en cada noche.</p>
+              <h2 id="hero_title_2">Eventos y festividades</h2>
+              <p id="hero_text_2">Los carnavales más vibrantes de Entre Ríos, con música, color y una energía que se siente en cada noche.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="assets/turismo.jpg" class="d-block w-100" alt="Costanera de Gualeguay">
             <div class="carousel-caption">
-              <h2>Naturaleza entrerriana</h2>
-              <p>La costanera del río Gualeguay, ideal para caminar despacio, mirar el paisaje y disfrutar la calma.</p>
+              <h2 id="hero_title_3">Naturaleza entrerriana</h2>
+              <p id="hero_text_3">La costanera del río Gualeguay, ideal para caminar despacio, mirar el paisaje y disfrutar la calma.</p>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@
 
       <div class="alert alert-warning alert-dismissible fade show d-flex align-items-center gap-2 mb-5" role="alert">
         <span style="font-size: 1.2rem;">👋</span>
-        <div><strong>Turismo Gualeguay te da la bienvenida.</strong> Recorré la ciudad con calma y descubrí rincones, sabores y experiencias pensadas para que te sientas a gusto desde el primer momento.</div>
+        <div><strong id="welcome_title">Turismo Gualeguay te da la bienvenida.</strong> <span id="welcome_body">Recorré la ciudad con calma y descubrí rincones, sabores y experiencias pensadas para que te sientas a gusto desde el primer momento.</span></div>
         <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Cerrar"></button>
       </div>
 
@@ -103,17 +103,17 @@
           <figcaption>Plaza San Martín</figcaption>
         </figure>
         <div>
-          <h2>Naturaleza en Gualeguay</h2>
-          <p>Ríos, parques y reservas naturales que invitan al descanso, a las caminatas tranquilas y a una escapada sin apuro.</p>
-          <a href="pages/naturaleza.html" class="btn btn-primary">Ver más</a>
+          <h2 id="index_nat_title">Naturaleza en Gualeguay</h2>
+          <p id="index_nat_text">Ríos, parques y reservas naturales que invitan al descanso, a las caminatas tranquilas y a una escapada sin apuro.</p>
+          <a href="pages/naturaleza.html" class="btn btn-primary" id="btn_ver_mas">Ver más</a>
         </div>
       </section>
 
       <section class="grid-2col mb-5">
         <div>
-          <h2>Gastronomía local</h2>
-          <p>Sabores típicos entrerrianos para disfrutar la mesa con el sabor de lo hecho en casa y la calidez de una comida compartida.</p>
-          <a href="pages/gastronomia.html" class="btn btn-primary">Ver más</a>
+          <h2 id="index_gast_title">Gastronomía local</h2>
+          <p id="index_gast_text">Sabores típicos entrerrianos para disfrutar la mesa con el sabor de lo hecho en casa y la calidez de una comida compartida.</p>
+          <a href="pages/gastronomia.html" class="btn btn-primary" id="btn_ver_mas_gast">Ver más</a>
         </div>
         <figure class="photo-static">
           <img src="assets/asado-fiesta.jpg" alt="Asado entrerriano" class="img-fluid">
@@ -127,14 +127,14 @@
           <figcaption>Carnavales de Gualeguay</figcaption>
         </figure>
         <div>
-          <h2>Eventos y festividades</h2>
-          <p>Carnavales, ferias y celebraciones que llenan de alegría cada encuentro y le dan ritmo a la vida de la ciudad.</p>
-          <a href="pages/eventos.html" class="btn btn-primary">Ver más</a>
+          <h2 id="index_event_title">Eventos y festividades</h2>
+          <p id="index_event_text">Carnavales, ferias y celebraciones que llenan de alegría cada encuentro y le dan ritmo a la vida de la ciudad.</p>
+          <a href="pages/eventos.html" class="btn btn-primary" id="btn_ver_mas_event">Ver más</a>
         </div>
       </section>
 
       <section class="mb-5">
-        <h2 class="mb-4">Galería</h2>
+        <h2 id="index_gallery_title" class="mb-4">Galería</h2>
         <div class="gallery">
           <figure class="photo-static">
             <img src="assets/plaza.jpg" alt="Plaza San Martín" class="img-fluid">
@@ -152,9 +152,9 @@
       </section>
 
       <section class="mb-5">
-        <h2>Servicios turísticos</h2>
-        <p>Alojamiento, transporte, guías y todo lo que necesitás para moverte cómodo y sentirte acompañado durante tu visita.</p>
-        <a href="pages/servicios.html" class="btn btn-primary">Ver servicios</a>
+        <h2 id="index_services_title">Servicios turísticos</h2>
+        <p id="index_services_text">Alojamiento, transporte, guías y todo lo que necesitás para moverte cómodo y sentirte acompañado durante tu visita.</p>
+        <a href="pages/servicios.html" id="index_services_btn" class="btn btn-primary">Ver servicios</a>
       </section>
 
       <section class="mb-5">
@@ -186,18 +186,18 @@
         <h2 class="mb-4">Contacto</h2>
         <form>
           <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
+            <label id="contact_name_label" for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="contact_name_placeholder" name="nombre" required>
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="email" name="email" required>
+            <label id="contact_email_label" for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="contact_email_placeholder" name="email" required>
           </div>
           <div class="mb-3">
-            <label for="comentario" class="form-label">Comentario</label>
-            <textarea class="form-control" id="comentario" name="comentario" rows="5" placeholder="Escribí tu consulta o comentario..."></textarea>
+            <label id="contact_msg_label" for="comentario" class="form-label">Comentario</label>
+            <textarea class="form-control" id="contact_msg_placeholder" name="comentario" rows="5"></textarea>
           </div>
-          <button type="submit" id="btn-contacto-enviar" class="btn btn-primary">Enviar</button>
+          <button type="submit" id="contact_submit" class="btn btn-primary">Enviar</button>
         </form>
       </section>
 
@@ -205,7 +205,7 @@
 
     <aside class="sidebar-col d-none d-md-block">
       <div class="sidebar">
-        <h3>Navegación rápida</h3>
+        <h3 id="sidebar_nav_title">Navegación rápida</h3>
         <ul>
           <li><a href="index.html">🏠 Inicio</a></li>
           <li><a href="pages/naturaleza.html">🌿 Naturaleza</a></li>
@@ -215,19 +215,22 @@
           <li><a href="pages/cultura.html">🏛️ Cultura</a></li>
           <li><a href="grilla.html">🎨 Grilla de artistas</a></li>
         </ul>
-        <h3 class="mt-4">¿Sabías que...?</h3>
-        <p style="font-size: 0.88rem;">Gualeguay es conocida como <strong>"La Perla del Entre Ríos"</strong> y sus carnavales son declarados de interés provincial.</p>
-        <h3 class="mt-3">Clima</h3>
-        <p style="font-size: 0.88rem;">Temperatura media anual: <strong>18 °C</strong>. La mejor época para visitar es primavera y otoño.</p>
+        <h3 id="sidebar_didyouknow_title" class="mt-4">¿Sabías que...?</h3>
+        <p id="sidebar_didyouknow_text" style="font-size: 0.88rem;">Gualeguay es conocida como <strong>"La Perla del Entre Ríos"</strong> y sus carnavales son declarados de interés provincial.</p>
+        <h3 id="sidebar_weather_title" class="mt-3">Clima</h3>
+        <p id="sidebar_weather_text" style="font-size: 0.88rem;">Temperatura media anual: <strong>18 °C</strong>. La mejor época para visitar es primavera y otoño.</p>
       </div>
     </aside>
 
     <footer>
       <div class="container text-center">
-        <p>&copy; 2025 Turismo en Gualeguay — Todos los derechos reservados</p>
-        <address>Gualeguay, Entre Ríos, Argentina</address>
+        <p id="footer_text">&copy; 2025 Turismo en Gualeguay — Todos los derechos reservados</p>
+        <address id="footer_addr">Gualeguay, Entre Ríos, Argentina</address>
       </div>
     </footer>
+
+    <!-- Botón de Idioma Flotante -->
+    <button id="btn-lang-float" class="btn btn-primary lang-toggle-btn">English</button>
 
     <!-- Botón Volver Arriba -->
     <button id="backToTop" class="btn btn-primary back-to-top" aria-label="Volver arriba">

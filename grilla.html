@@ -35,13 +35,13 @@
         </button>
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/naturaleza.html">Naturaleza</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/gastronomia.html">Gastronomía</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/eventos.html">Eventos</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/cultura.html">Cultura</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="grilla.html">Grilla de artistas</a></li>
+            <li class="nav-item"><a id="nav_inicio" class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a id="nav_naturaleza" class="nav-link" href="pages/naturaleza.html">Naturaleza</a></li>
+            <li class="nav-item"><a id="nav_gastronomia" class="nav-link" href="pages/gastronomia.html">Gastronomía</a></li>
+            <li class="nav-item"><a id="nav_servicios" class="nav-link" href="pages/servicios.html">Servicios</a></li>
+            <li class="nav-item"><a id="nav_eventos" class="nav-link" href="pages/eventos.html">Eventos</a></li>
+            <li class="nav-item"><a id="nav_cultura" class="nav-link" href="pages/cultura.html">Cultura</a></li>
+            <li class="nav-item"><a id="nav_grilla" class="nav-link active" aria-current="page" href="grilla.html">Grilla de artistas</a></li>
           </ul>
         </div>
       </nav>
@@ -50,16 +50,16 @@
     <section class="hero">
       <div class="container">
         <p class="text-uppercase fw-semibold mb-2">Turismo Gualeguay</p>
-        <h1>Cartelera de Artistas</h1>
-        <p>Espacio dedicado a quienes comparten su arte y cultura en nuestra ciudad.</p>
+        <h1 id="grilla_hero_title">Cartelera de Artistas</h1>
+        <p id="grilla_hero_text">Espacio dedicado a quienes comparten su arte y cultura en nuestra ciudad.</p>
       </div>
     </section>
 
     <main class="container my-5">
       <section class="grilla-artistas">
         <div class="text-center mb-5">
-          <h2 class="display-5 fw-bold">El Alma de Gualeguay</h2>
-          <p class="lead mx-auto" style="max-width: 800px;">
+          <h2 id="grilla_main_title" class="display-5 fw-bold">El Alma de Gualeguay</h2>
+          <p id="grilla_main_desc" class="lead mx-auto" style="max-width: 800px;">
             Bienvenidos a nuestra cartelera cultural. Un espacio donde celebramos nuestra identidad entrerriana: desde el sentir del folclore hasta la energía inigualable de nuestras batucadas y el ritmo de la cumbia, motores esenciales de la alegría y el carnaval que nos define.
           </p>
         </div>
@@ -260,10 +260,13 @@
 
     <footer>
       <div class="container text-center">
-        <p>&copy; 2025 Turismo en Gualeguay — Todos los derechos reservados</p>
-        <address>Gualeguay, Entre Ríos, Argentina</address>
+        <p id="footer_text">&copy; 2025 Turismo en Gualeguay — Todos los derechos reservados</p>
+        <address id="footer_addr">Gualeguay, Entre Ríos, Argentina</address>
       </div>
     </footer>
+
+    <!-- Botón de Idioma Flotante -->
+    <button id="btn-lang-float" class="btn btn-primary lang-toggle-btn">English</button>
 
     <!-- Botón Volver Arriba -->
     <button id="backToTop" class="btn btn-primary back-to-top" aria-label="Volver arriba">
