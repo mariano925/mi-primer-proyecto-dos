@@ -48,111 +48,134 @@
           </p>
         </div>
 
+        <!-- FILTROS DE BÚSQUEDA -->
+        <div class="filter-container text-center mb-5">
+          <button class="filter-btn active" data-filter="all">✨ Todos</button>
+          <button class="filter-btn" data-filter="rock">🎸 Rock</button>
+          <button class="filter-btn" data-filter="reggae">🌿 Reggae</button>
+          <button class="filter-btn" data-filter="folclore">🪕 Folclore</button>
+          <button class="filter-btn" data-filter="electronica">🎧 Electrónica</button>
+          <button class="filter-btn" data-filter="cumbia">🎺 Cumbia</button>
+          <button class="filter-btn" data-filter="batucada">🥁 Batucada</button>
+        </div>
+
         <!-- ROCK & POP -->
-        <h3 class="genre-title">Rock & Pop 🎸</h3>
-        <div class="artistas-container">
-          <div class="artista-card rock">
-            <div class="badge-date">Próximamente</div>
-            <span class="card-icon">🎸</span>
-            <h3>Banda de Rock</h3>
-            <p class="category">Show en Vivo</p>
-            <p class="placeholder-info">Plaza de Mayo - 21:00hs</p>
-          </div>
-          <div class="artista-card rock">
-            <div class="badge-date">A confirmar</div>
-            <span class="card-icon">🎸</span>
-            <h3>Solista Pop</h3>
-            <p class="category">Acústico</p>
-            <p class="placeholder-info">Teatro Gualeguay</p>
+        <div class="genre-group" data-genre="rock">
+          <h3 class="genre-title">Rock & Pop 🎸</h3>
+          <div class="artistas-container">
+            <div class="artista-card rock">
+              <div class="badge-date">Próximamente</div>
+              <span class="card-icon">🎸</span>
+              <h3>Banda de Rock</h3>
+              <p class="category">Show en Vivo</p>
+              <p class="placeholder-info">Plaza de Mayo - 21:00hs</p>
+            </div>
+            <div class="artista-card rock">
+              <div class="badge-date">A confirmar</div>
+              <span class="card-icon">🎸</span>
+              <h3>Solista Pop</h3>
+              <p class="category">Acústico</p>
+              <p class="placeholder-info">Teatro Gualeguay</p>
+            </div>
           </div>
         </div>
 
         <!-- REGGAE & SKA -->
-        <h3 class="genre-title">Reggae & Ska 🌿</h3>
-        <div class="artistas-container">
-          <div class="artista-card reggae">
-            <div class="badge-date">Enero 2025</div>
-            <span class="card-icon">🌿</span>
-            <h3>Grupo Invitado</h3>
-            <p class="category">Reggae Roots</p>
-            <p class="placeholder-info">Costanera Sur</p>
-          </div>
-          <div class="artista-card ad-space">
-            <h3>Publicidad</h3>
-            <p class="category">Tu marca en la cultura</p>
-            <p class="placeholder-info">Espacio disponible</p>
+        <div class="genre-group" data-genre="reggae">
+          <h3 class="genre-title">Reggae & Ska 🌿</h3>
+          <div class="artistas-container">
+            <div class="artista-card reggae">
+              <div class="badge-date">Enero 2025</div>
+              <span class="card-icon">🌿</span>
+              <h3>Grupo Invitado</h3>
+              <p class="category">Reggae Roots</p>
+              <p class="placeholder-info">Costanera Sur</p>
+            </div>
+            <div class="artista-card ad-space">
+              <h3>Publicidad</h3>
+              <p class="category">Tu marca en la cultura</p>
+              <p class="placeholder-info">Espacio disponible</p>
+            </div>
           </div>
         </div>
 
         <!-- FOLCLORE -->
-        <h3 class="genre-title">Folclore & Tradición 🪕</h3>
-        <div class="artistas-container">
-          <div class="artista-card folclore">
-            <div class="badge-date">Próximamente</div>
-            <span class="card-icon">🪕</span>
-            <h3>Agrupación Tradicional</h3>
-            <p class="category">Danza Folclórica</p>
-            <p class="placeholder-info">Peña del Río</p>
-          </div>
-          <div class="artista-card folclore">
-            <div class="badge-date">Febrero 2025</div>
-            <span class="card-icon">🪕</span>
-            <h3>Conjunto Local</h3>
-            <p class="category">Chamameceros</p>
-            <p class="placeholder-info">Plaza San Martín</p>
+        <div class="genre-group" data-genre="folclore">
+          <h3 class="genre-title">Folclore & Tradición 🪕</h3>
+          <div class="artistas-container">
+            <div class="artista-card folclore">
+              <div class="badge-date">Próximamente</div>
+              <span class="card-icon">🪕</span>
+              <h3>Agrupación Tradicional</h3>
+              <p class="category">Danza Folclórica</p>
+              <p class="placeholder-info">Peña del Río</p>
+            </div>
+            <div class="artista-card folclore">
+              <div class="badge-date">Febrero 2025</div>
+              <span class="card-icon">🪕</span>
+              <h3>Conjunto Local</h3>
+              <p class="category">Chamameceros</p>
+              <p class="placeholder-info">Plaza San Martín</p>
+            </div>
           </div>
         </div>
 
         <!-- ELECTRÓNICA -->
-        <h3 class="genre-title">Electrónica & Beats 🎧</h3>
-        <div class="artistas-container">
-          <div class="artista-card electronica">
-            <div class="badge-date">Marzo 2025</div>
-            <span class="card-icon">🎧</span>
-            <h3>DJ Set Local</h3>
-            <p class="category">Electronic Music</p>
-            <p class="placeholder-info">Sunset Costanera</p>
-          </div>
-          <div class="artista-card electronica">
-            <div class="badge-date">Próximamente</div>
-            <span class="card-icon">🎧</span>
-            <h3>Live Session</h3>
-            <p class="category">Techno & House</p>
-            <p class="placeholder-info">Espacio Joven</p>
-          </div>
-          <div class="artista-card ad-space">
-            <h3>Publicidad</h3>
-            <p class="category">Sponsor Oficial</p>
-            <p class="placeholder-info">Contacto aquí</p>
+        <div class="genre-group" data-genre="electronica">
+          <h3 class="genre-title">Electrónica & Beats 🎧</h3>
+          <div class="artistas-container">
+            <div class="artista-card electronica">
+              <div class="badge-date">Marzo 2025</div>
+              <span class="card-icon">🎧</span>
+              <h3>DJ Set Local</h3>
+              <p class="category">Electronic Music</p>
+              <p class="placeholder-info">Sunset Costanera</p>
+            </div>
+            <div class="artista-card electronica">
+              <div class="badge-date">Próximamente</div>
+              <span class="card-icon">🎧</span>
+              <h3>Live Session</h3>
+              <p class="category">Techno & House</p>
+              <p class="placeholder-info">Espacio Joven</p>
+            </div>
+            <div class="artista-card ad-space">
+              <h3>Publicidad</h3>
+              <p class="category">Sponsor Oficial</p>
+              <p class="placeholder-info">Contacto aquí</p>
+            </div>
           </div>
         </div>
 
         <!-- CUMBIA & TROPICAL -->
-        <h3 class="genre-title">Cumbia & Ritmos Tropicales 🎺</h3>
-        <div class="artistas-container">
-          <div class="artista-card cumbia">
-            <div class="badge-date">Próximamente</div>
-            <span class="card-icon">🎺</span>
-            <h3>Grupo Tropical</h3>
-            <p class="category">Cumbia Entrerriana</p>
-            <p class="placeholder-info">¡Para bailar sin parar!</p>
+        <div class="genre-group" data-genre="cumbia">
+          <h3 class="genre-title">Cumbia & Ritmos Tropicales 🎺</h3>
+          <div class="artistas-container">
+            <div class="artista-card cumbia">
+              <div class="badge-date">Próximamente</div>
+              <span class="card-icon">🎺</span>
+              <h3>Grupo Tropical</h3>
+              <p class="category">Cumbia Entrerriana</p>
+              <p class="placeholder-info">¡Para bailar sin parar!</p>
+            </div>
           </div>
         </div>
 
         <!-- BATUCADAS & CARNAVAL -->
-        <h3 class="genre-title">Batucadas & Carnaval 🥁</h3>
-        <div class="artistas-container">
-          <div class="artista-card batucada">
-            <div class="badge-date">Enero / Febrero</div>
-            <span class="card-icon">🥁</span>
-            <h3>Batucada del Puerto</h3>
-            <p class="category">Ritmo de Carnaval</p>
-            <p class="placeholder-info">El latido de nuestra ciudad</p>
-          </div>
-          <div class="artista-card ad-space">
-            <h3>Publicidad</h3>
-            <p class="category">Sponsor Oficial</p>
-            <p class="placeholder-info">Contacto aquí</p>
+        <div class="genre-group" data-genre="batucada">
+          <h3 class="genre-title">Batucadas & Carnaval 🥁</h3>
+          <div class="artistas-container">
+            <div class="artista-card batucada">
+              <div class="badge-date">Enero / Febrero</div>
+              <span class="card-icon">🥁</span>
+              <h3>Batucada del Puerto</h3>
+              <p class="category">Ritmo de Carnaval</p>
+              <p class="placeholder-info">El latido de nuestra ciudad</p>
+            </div>
+            <div class="artista-card ad-space">
+              <h3>Publicidad</h3>
+              <p class="category">Sponsor Oficial</p>
+              <p class="placeholder-info">Contacto aquí</p>
+            </div>
           </div>
         </div>
       </section>

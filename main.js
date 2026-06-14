@@ -98,4 +98,31 @@ document.addEventListener('DOMContentLoaded', () => {
             carousel.cycle();
         });
     }
+
+
+    // --- 6. FILTRO DE GÉNEROS MUSICALES (GRILLA) ---
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const genreGroups = document.querySelectorAll('.genre-group');
+
+    if (filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+
+                // Actualizar estado del botón
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Filtrar grupos
+                genreGroups.forEach(group => {
+                    const genre = group.getAttribute('data-genre');
+                    if (filter === 'all' || genre === filter) {
+                        group.style.display = 'block';
+                    } else {
+                        group.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
 });
