@@ -71,6 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 // Simulación de envío exitoso
                 e.preventDefault();
+                // Notificamos a Clarity del evento de conversión
+                if (typeof clarity === "function") {
+                    clarity("event", "contacto_enviado");
+                }
                 alert('¡esta pagina aun esta en contruccion, disculpe!');
                 // Reiniciamos el formulario
                 form.reset();
